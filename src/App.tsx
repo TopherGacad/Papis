@@ -1,5 +1,4 @@
 // import { router } from "./Router";
-import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
 

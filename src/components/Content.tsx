@@ -1,7 +1,7 @@
 function Content (){
     return(
         <>
-            <div className="bg-white rounded-[20px] content-contain w-full h-full">
+            <div className="bg-white h-full rounded-[20px] w-[950px]">
                 <div className="header">
                     
                 </div>

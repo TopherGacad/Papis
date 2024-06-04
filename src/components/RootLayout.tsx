@@ -30,15 +30,19 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
+import Rightbar from "./Rightbar";
 
 function RootLayout() {
   return (
-    <div className="flex p-3 h-screen w-screen bg-gray-200" >
-      <div className="border-solid border-green-600">
+    <div className="flex p-3 px-2 h-screen w-screen bg-[#f2f2f2]" >
+      <div className="border-solid">
         <Sidebar />
       </div>
-      <div className="flex-grow border-solid border-blue-600">
+      <div className="border-solid">
         <Outlet />
+      </div>
+      <div className="flex-grow border-solid">
+        <Rightbar />
       </div>
     </div>
   );
