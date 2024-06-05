@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind  utilities;
+
+@layer base{
+    li{
+        @apply
+        pr-[10px]
+        font-bold
+        text-[16px];
+    }
+
+}

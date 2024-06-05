@@ -8,7 +8,9 @@ import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <>
-      <div className="h-full mx-[12px] p-2 side-contain rounded-[20px] w-[500px] bg-white">
+      {/* SIDE NAV */}
+      <div className="h-full mx-[12px] p-2 side-contain rounded-[20px] w-[500px] bg-white flex flex-col">
+        {/* HEADER */}
         <div className="flex justify-between items-center header h-[80px] px-[20px]">
           <div className="head-left flex items-center">
             <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
@@ -22,6 +24,8 @@ function Sidebar() {
             <IoAddCircleSharp className="w-[25px] h-[25px]"></IoAddCircleSharp>
           </div>
         </div>
+
+        {/* SEARCH BAR */}
         <div className="h-20 p-3 flex items-center">
           <span className="relative z-[99] left-0 my-[15px] mx-[15px]">
             <IoIosSearch></IoIosSearch>
@@ -32,6 +36,17 @@ function Sidebar() {
             placeholder="Search People"
           />
         </div>
+
+        {/* FILTER */}
+        <div className=" h-[20px]">
+          <ul className="flex list-none w-full pl-[20px]">
+            <li>New</li>
+            <li>Groups</li>
+          </ul>
+        </div>
+
+        {/* USER LIST */}
+        <div className="border-[1px] border-solid border-red-600 flex-grow"></div>
       </div>
     </>
   );
