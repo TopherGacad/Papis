@@ -3,10 +3,20 @@
 @tailwind utilities;
 
 @layer base {
-    li {
-        @apply pr-[20px] font-bold text-[16px];
-    }
+  li {
+    @apply pr-[20px]
+        font-bold
+        text-[16px];
+  }
+
+  .msg-container{
+    @apply hover:bg-gray-200
+    rounded-[10px]
+    cursor-pointer
+    py-[7px];
+  }
 }
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -15,7 +25,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: white;
+    background: #ffffff;
 }
 
 /* Handle */

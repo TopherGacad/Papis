@@ -4,8 +4,17 @@ import { IoAddCircleSharp } from "react-icons/io5";
 import { FaSortDown } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+
+interface Props {
+  filters: string[];
+  onSelectItem: (item: string) => void;
+}
 
 function Sidebar() {
+  const filters = ["New", "Groups"];
+  const [selectedFilter, setSelectedFilter] = useState(0);
+
   return (
     <>
       {/* SIDE NAV */}
@@ -17,7 +26,7 @@ function Sidebar() {
             <span className="text-base font-bold items-center">Chats</span>
             <FaSortDown className="w-[25px] h-[25px] pl-[5px] mb-[10px]"></FaSortDown>
           </div>
-          <div className="head-right flex justify-around items-center border-[1px] border-solid">
+          <div className="head-right flex justify-around items-center">
             <span className="pr-[10px]">
               <TbSettings2 className=" w-[25px] h-[25px]"></TbSettings2>
             </span>
@@ -31,7 +40,7 @@ function Sidebar() {
             <IoIosSearch></IoIosSearch>
           </span>
           <input
-            className="justify-self-center absolute pl-[40px] w-[450px] h-[50px] rounded-[15px] border-[#16161A] border-solid border-[1px]"
+            className="justify-self-center absolute pl-[40px] w-[450px] h-[50px] rounded-[15px] border-[#A1A1A1] border-solid border-[1px]"
             type="text"
             placeholder="Search People"
           />
@@ -39,14 +48,27 @@ function Sidebar() {
 
         {/* FILTER */}
         <div className=" h-[20px]">
-          <ul className="flex list-none w-full pl-[40px]">
-            <li>New</li>
-            <li>Groups</li>
+          <ul className=" flex list-none w-full pl-[20px]">
+            {filters.map((filter, index) => (
+              <li
+                key={filter}
+                onClick={() => {
+                  setSelectedFilter(index);
+                }}
+                className={`${
+                  index === selectedFilter && "bg-violet-900 text-white"
+                } cursor-pointer px-[15px] mr-[5px] border-[1px] border-solid rounded-[15px] tran duration-[.7s]`}
+              >
+                {filter}
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* USER LIST */}
+       
+        {/* {selectedFilter === 0 && <></>} */}
 
+        {/* USER LIST */}
         {/**UNSEEN MESSAGED STYLE*/}
         <div className="flex-grow mt-[20px] flex items-center overflow-x-auto flex-col">
           <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
@@ -55,7 +77,7 @@ function Sidebar() {
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
               <span className="text-[16px]">
-                <b>Marc Demonlim</b>
+                <b>Marc Remolin</b>
               </span>
               <span className="text-[14px] truncate">
                 <b>Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</b>
