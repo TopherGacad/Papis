@@ -49,25 +49,32 @@ function Sidebar() {
 
         {/**UNSEEN MESSAGED STYLE*/}
         <div className="flex-grow mt-[20px] flex items-center overflow-x-auto flex-col">
-          
           <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
             <div className="msg-left w-[60px] flex justify-center mx-2">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Marc Remolin</b></span>
-              <span className="text-[14px] truncate"><b>Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</b></span> 
+              <span className="text-[16px]">
+                <b>Marc Demonlim</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</b>
+              </span>
             </div>
           </div>
-          
+
           {/**SEEN MESSAGED STYLE*/}
           <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
             <div className="msg-left w-[60px] flex justify-center mx-2">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Carl Joshua Krazy</b></span>
-              <span className="text-[14px] truncate">Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</span>  
+              <span className="text-[16px]">
+                <b>Carl Joshua Krazy</b>
+              </span>
+              <span className="text-[14px] truncate">
+                Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.
+              </span>
             </div>
           </div>
 
@@ -77,8 +84,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -87,8 +103,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -97,8 +122,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -107,8 +141,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -117,8 +160,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -127,8 +179,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -137,8 +198,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -147,8 +217,17 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
 
@@ -157,13 +236,20 @@ function Sidebar() {
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
             <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]"><b>Fuck Group Kings</b></span>
-              <span className="text-[14px] truncate"><b>Jericho Rosales Not: <span className="msg-prev text-[14px]">tanginakaasdasdasdadadadadadadadasdasdasd</span></b></span> 
+              <span className="text-[16px]">
+                <b>Fuck Group Kings</b>
+              </span>
+              <span className="text-[14px] truncate">
+                <b>
+                  Jericho Rosales Not:{" "}
+                  <span className="msg-prev text-[14px]">
+                    tanginakaasdasdasdadadadadadadadasdasdasd
+                  </span>
+                </b>
+              </span>
             </div>
           </div>
-  
         </div>
-
       </div>
     </>
   );

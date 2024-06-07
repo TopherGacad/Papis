@@ -3,31 +3,28 @@
 @tailwind utilities;
 
 @layer base {
-  li {
-    @apply pr-[20px]
-        font-bold
-        text-[16px];
-  }
+    li {
+        @apply pr-[20px] font-bold text-[16px];
+    }
 }
 
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
 }
- 
+
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: white;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: rgb(209 213 219);
     border-radius: 5px;
 }
- 
+
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
