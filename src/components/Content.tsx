@@ -5,7 +5,7 @@ import { IoSend } from "react-icons/io5";
 function Content() {
   return (
     <>
-      <div className="bg-white h-full rounded-[20px] w-[950px] flex flex-col justify-between ">
+      <div className="bg-white h-full rounded-[20px] flex-grow flex flex-col justify-between ">
         {/* Top Bar */}
         <div className="bg-white h-[80px] px-[20px] w-full rounded-t-[20px] flex justify-between items-center drop-shadow-[0_5px_5px_rgba(0,0,0,0.05)]">
           <div className="head-left flex items-center">
