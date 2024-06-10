@@ -23,6 +23,11 @@ function Content() {
         {/* Messages */}
 
         <div className="message h-screen w-full flex flex-col overflow-y-auto pt-28">
+          <div className="start flex flex-col justify-center w-full">
+            <div>
+              <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
+            </div>
+          </div>
           <div className="time text-center">
             <p className="text-[12px]">
               <b>7:49AM</b>
