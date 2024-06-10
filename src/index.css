@@ -3,38 +3,43 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply 
+    font-normal
+    text-[#1e1e1e];
+
+  }
   li {
     @apply pr-[20px]
         text-[16px]
-        text-gray-600
+        text-gray-600;
   }
 
-  .msg-container{
-    @apply hover:bg-gray-200
+  .msg-container {
+    @apply hover:bg-gray-100
     rounded-[10px]
     cursor-pointer
     py-[7px];
   }
 }
 
-
 /* width */
 ::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #ffffff;
+  background: #ffffff;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(209 213 219);
-    border-radius: 5px;
+  background: rgb(209 213 219);
+  border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }

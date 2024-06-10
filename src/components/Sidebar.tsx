@@ -56,8 +56,8 @@ function Sidebar() {
                   setSelectedFilter(index);
                 }}
                 className={`${  
-                  index === selectedFilter && "bg-violet-900 text-white"
-                } cursor-pointer px-[15px] mr-[5px] border-[1px] border-solid rounded-[15px] tran duration-[.7s]`}
+                  index === selectedFilter && "bg-[#7484fa] text-white"
+                } cursor-pointer px-[15px] mr-[5px] border-[1px] border-solid rounded-[15px] tran duration-[.5s]`}
               >
                 {filter}
               </li>
