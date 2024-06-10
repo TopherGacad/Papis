@@ -5,8 +5,8 @@
 @layer base {
   li {
     @apply pr-[20px]
-        font-bold
-        text-[16px];
+        text-[16px]
+        text-gray-600
   }
 
   .msg-container{
