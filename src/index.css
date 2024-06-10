@@ -9,6 +9,10 @@
     text-[#1e1e1e];
 
   }
+  .nav-right-menu li{
+    @apply
+      text-[20px];
+  }
   li {
     @apply pr-[20px]
         text-[16px]
