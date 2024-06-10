@@ -34,14 +34,14 @@ import Rightbar from "./Rightbar";
 
 function RootLayout() {
   return (
-    <div className="flex p-3 px-2 h-screen w-screen bg-[#f2f2f2]" >
+    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2]" >
       <div className="border-solid">
         <Sidebar />
       </div>
-      <div className="border-solid">
+      <div className="border-solid flex-grow">
         <Outlet />
       </div>
-      <div className="flex-grow border-solid">
+      <div className="border-solid">
         <Rightbar />
       </div>
     </div>
