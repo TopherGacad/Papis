@@ -1,5 +1,5 @@
 // import React from "react";
-// import { Outlet } from "react-router-dom";   
+// import { Outlet } from "react-router-dom";
 // import Navbar from "./Navbar";
 
 // export default function RootLayout() {
@@ -32,9 +32,10 @@ import Sidebar from "./Sidebar";
 import Content from "./Content";
 import Rightbar from "./Rightbar";
 
-function RootLayout() {
+export default function RootLayout() {
   return (
-    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2] "font-sans >
+    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2] font-sans" >
+
       <div className="border-solid">
         <Sidebar />
       </div>
@@ -47,5 +48,3 @@ function RootLayout() {
     </div>
   );
 }
-
-export default RootLayout;

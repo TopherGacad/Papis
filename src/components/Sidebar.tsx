@@ -11,7 +11,7 @@ interface Props {
   onSelectItem: (item: string) => void;
 }
 
-function Sidebar() {
+export default function Sidebar() {
   const filters = ["New", "Groups"];
   const [selectedFilter, setSelectedFilter] = useState(0);
 
@@ -55,7 +55,7 @@ function Sidebar() {
                 onClick={() => {
                   setSelectedFilter(index);
                 }}
-                className={`${  
+                className={`${
                   index === selectedFilter && "bg-[#7484fa] text-white"
                 } cursor-pointer px-[15px] mr-[5px] border-[1px] border-solid rounded-[15px] tran duration-[.5s]`}
               >
@@ -65,7 +65,6 @@ function Sidebar() {
           </ul>
         </div>
 
-       
         {/* {selectedFilter === 0 && <></>} */}
 
         {/* USER LIST */}
@@ -276,5 +275,3 @@ function Sidebar() {
     </>
   );
 }
-
-export default Sidebar;

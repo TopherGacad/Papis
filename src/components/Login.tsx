@@ -1,4 +1,5 @@
-function Login() {
+export default function Login() {
+
   return (
     <>
       <div className="h-screen w-screen bg-[#fffff] py-[30px] px-[80px] flex flex-col font-sans">
@@ -7,15 +8,19 @@ function Login() {
             <span className="logo">
               <img
                 className="w-[50px] h-[5    0px] justify-center mr-[10px]"
+
                 src="./src/assets/papis-logo.png"
                 alt="Papis Logo"
               />
             </span>
+
             <span className="text-[30px] mb-[5px]">
+
               <b>Papis</b>
             </span>
           </div>
           <div className="nav-right">
+
             <ul className="w-[370px] nav-menu flex justify-between items-center">
               <li>Home</li>
               <li>About Us</li>
@@ -88,9 +93,8 @@ function Login() {
           </div>
 
         </div>
+
       </div>
     </>
   );
 }
-
-export default Login;
