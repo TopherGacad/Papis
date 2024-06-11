@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,11 +10,13 @@
     text-[#1e1e1e];
 
   }
-  .nav-right-menu li{
+  .nav-menu li{
     @apply
-      text-[20px];
+      font-bold
+      cursor-pointer
+      text-[18px];
   }
-  li {
+  .filter li {
     @apply pr-[20px]
         text-[16px]
         text-gray-600;
@@ -25,6 +28,21 @@
     cursor-pointer
     py-[7px];
   }
+  .form-container{
+    @apply
+      mt-5
+  }
+
+  .field-container{
+    @apply
+      mt-[25px];
+  }
+
+  .field-container input{
+    @apply
+      p-[20px];
+  }
+
 }
 
 /* width */

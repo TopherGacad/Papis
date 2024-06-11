@@ -34,7 +34,7 @@ import Rightbar from "./Rightbar";
 
 function RootLayout() {
   return (
-    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2]" >
+    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2] "font-sans >
       <div className="border-solid">
         <Sidebar />
       </div>
