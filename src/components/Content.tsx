@@ -23,16 +23,39 @@ function Content() {
         {/* Messages */}
 
         <div className="message h-screen w-full flex flex-col overflow-y-auto pt-28">
-          <div className="start flex flex-col justify-center w-full">
-            <div>
-              <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
+          {/* Conversation Start */}
+          <div className="start flex flex-col justify-center items-center w-full h-[200px]">
+            <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
+            <div className="groupName pt-3 text-center">
+              <p>
+                <b>Target ng China</b>
+              </p>
+              <p>Xtian Baotista created the groupchat.</p>
             </div>
           </div>
-          <div className="time text-center">
+
+          {/* Member addition */}
+          <div className="membersAdd mt-3 text-center">
+            <div className="memberAdded">
+              <p>Xtian Baotista added Kris Guo.</p>
+            </div>
+            <div className="memberAdded">
+              <p>Xtian Baotista added Carlo Josuwe.</p>
+            </div>
+            <div className="memberAdded">
+              <p>Xtian Baotista added Ethan Long.</p>
+            </div>
+          </div>
+
+          {/* Time */}
+          <div className="time text-center mt-3">
             <p className="text-[12px]">
-              <b>7:49AM</b>
+              <b>June 3, 2024 7:49AM </b>
             </p>
           </div>
+
+          {/* Bubbles */}
+
           <div className="msgrcv w-full flex flex-row my-3">
             <div className="flex items-end">
               <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
