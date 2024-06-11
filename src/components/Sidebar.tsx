@@ -18,7 +18,7 @@ export default function Sidebar() {
   return (
     <>
       {/* SIDE NAV */}
-      <div className="h-full mx-[12px] p-2 side-contain rounded-[20px] w-[500px] bg-white flex flex-col overflow-hidden">
+      <div className="h-full mx-[12px] p-2 side-contain rounded-[20px] w-[500px] bg-white flex flex-col overflow-hidden font-sans">
         {/* HEADER */}
         <div className="flex justify-between items-center header h-[80px] px-[20px]">
           <div className="head-left flex items-center">
@@ -48,7 +48,7 @@ export default function Sidebar() {
 
         {/* FILTER */}
         <div className=" h-[20px]">
-          <ul className=" flex list-none w-full pl-[20px]">
+          <ul className="filter flex list-none w-full pl-[20px]">
             {filters.map((filter, index) => (
               <li
                 key={filter}
