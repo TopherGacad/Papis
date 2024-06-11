@@ -2,7 +2,7 @@ export default function Login() {
 
   return (
     <>
-      <div className="h-screen w-screen bg-[#fffff] py-[30px] px-[80px] flex flex-col font-sans">
+      <div className="h-screen w-screen bg-[#F1F3FB] py-[20px] px-[80px] flex flex-col font-sans">
         <div className="nav h-[100px] flex flex-row justify-between items-center">
           <div className="nav-left flex items-center">
             <span className="logo">
@@ -22,9 +22,9 @@ export default function Login() {
           <div className="nav-right">
 
             <ul className="w-[370px] nav-menu flex justify-between items-center">
-              <li>Home</li>
-              <li>About Us</li>
-              <li className="border-solid border-[1px] py-[10px] px-[25px] rounded-[15px] bg-[#29D1B8] text-[#FFFFFE]">
+              <li className="btn-menu">Home</li>
+              <li className="btn-menu">About Us</li>
+              <li className="btn-login border-solid border-[1px] py-[10px] px-[25px] rounded-[15px] bg-[#29D1B8] text-[#FFFFFE]">
                 Login
               </li>
             </ul>
@@ -89,7 +89,7 @@ export default function Login() {
           </div>
 
           <div className="right-hero w-[60%] h-full  flex justify-center items-center">
-            <img className="w-[80%] h-[600px]" src="./src/assets/chatting.jpg" alt="Login hero"/>
+            <img className="w-[85%] h-[650px]" src="./src/assets/chat-img.png" alt="Login hero"/>
           </div>
 
         </div>

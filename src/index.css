@@ -8,7 +8,6 @@
     @apply 
     font-normal
     text-[#1e1e1e];
-
   }
   .nav-menu li{
     @apply
@@ -42,7 +41,16 @@
     @apply
       p-[20px];
   }
-
+  .btn-menu{
+    @apply
+      duration-[.3s]
+      hover:text-[#29D1B8];
+  }
+  .btn-login{
+    @apply
+    duration-[.3s]
+    hover:bg-[#28a794];
+  }
 }
 
 /* width */
