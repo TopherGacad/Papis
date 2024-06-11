@@ -7,8 +7,9 @@
 //   plugins: [],
 // }
 
-/** @type {import('tailwindcss').Config} */
 
+/** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin');
 const defaultTheme = require('tailwindcss/defaultTheme');
 export default {
   content: [
@@ -17,12 +18,23 @@ export default {
   ],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '.8px',
+      },
       fontFamily: {
         sans: ['Poppins', ...defaultTheme.fontFamily.sans],
       },
     },
   },
   plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.backdrop-blur-xs': {
+          backdropFilter: 'blur(.8px)',
+        },
+      });
+    }),
+
     require('@tailwindcss/typography'),
   ],
 }

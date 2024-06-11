@@ -1,8 +1,10 @@
+import ModalLogin from "./ModalLogin";
 export default function Login() {
 
   return (
     <>
-      <div className="h-screen w-screen bg-[#F1F3FB] py-[20px] px-[80px] flex flex-col font-sans">
+      <div className="h-screen w-screen bg-[#F1F3FB] py-[20px] px-[80px] flex flex-col font-sans z-[0]">
+        <ModalLogin></ModalLogin>
         <div className="nav h-[100px] flex flex-row justify-between items-center">
           <div className="nav-left flex items-center">
             <span className="logo">
