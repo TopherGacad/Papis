@@ -17,6 +17,7 @@
   }
   .filter li {
     @apply pr-[20px]
+        mr-[10px]
         text-[16px]
         text-gray-600;
   }
@@ -60,7 +61,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: #ffffff;  
 }
 
 /* Handle */

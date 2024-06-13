@@ -31,18 +31,37 @@ import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Content from "./Content";
 import Rightbar from "./Rightbar";
+import { useState } from "react";
+import { useAppContext } from "../Context/AppContextProvider";
 
 export default function RootLayout() {
+  // const [setModal, setSetModal] = useState(false);
   return (
-    <div className="flex p-3 px-2 h-screen bg-[#f2f2f2] font-sans" >
+    <div className="flex flex-row p-3 px-2 h-screen bg-[#f2f2f2] font-sans">
+      {/* 
+      <div
+        className={`${
+          setModal ? "w-100" : "w-0 overflow-hidden"
+        } border border-red-500  bg-[rgba(0,0,0,0.2)] duration-[1s]`}
+      >
+        <h1>I am modal</h1>
+        <button onClick={() => setSetModal((prevState) => !prevState)}>
+          Close modal
+        </button>
+      </div>
+      */}
 
-      <div className="border-solid">
+      {/* <button onClick={() => setSetModal((prevState) => !prevState)}>
+        Show modal
+      </button> */}
+
+      <div className="w-[28%]">
         <Sidebar />
       </div>
-      <div className="border-solid flex-grow">
+      <div className="flex-grow mx-[10px]">
         <Outlet />
       </div>
-      <div className="border-solid">
+      <div className="overflow-hidden">
         <Rightbar />
       </div>
     </div>

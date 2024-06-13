@@ -1,6 +1,6 @@
 export default function Groupchat() {
   return (
-    <div className="message h-screen w-full flex flex-col overflow-y-auto pt-28">
+    <div className="container message h-screen flex flex-col overflow-y-auto pt-28">
       {/* Conversation Start */}
       <div className="start flex flex-col justify-center items-center w-full h-[200px]">
         <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>

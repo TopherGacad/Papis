@@ -2,7 +2,7 @@ export default function Individualinfo() {
   return (
     <>
       {/* RIGHT PANEL MAIN CONTAINER */}
-      <div className="right-container h-full w-[410px] rounded-[20px] bg-white mx-[10px] flex flex-col overflow-hidden">
+      <div className="container right-container h-full rounded-[20px] bg-white mx-[10px] flex flex-col overflow-hidden">
         {/* PROFILE SECTION */}
         <div className="py-3 head-right max-h-[250px] flex flex-col items-center justify-center border-solid border-b-[1px] border-black-500">
           <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
