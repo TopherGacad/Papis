@@ -18,9 +18,9 @@ export default function Sidebar() {
   return (
     <>
       {/* SIDE NAV */}
-      <div className="h-full mx-[12px] p-2 side-contain rounded-[20px] w-[500px] bg-white flex flex-col overflow-hidden font-sans">
+      <div className="h-full p-3 side-contain rounded-[20px] w-full bg-white flex flex-col overflow-hidden font-sans">
         {/* HEADER */}
-        <div className="flex justify-between items-center header h-[80px] px-[20px]">
+        <div className="flex container justify-between items-center header h-[80px] px-[20px]">
           <div className="head-left flex items-center">
             <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
             <span className="text-base font-bold items-center">Chats</span>
@@ -32,23 +32,23 @@ export default function Sidebar() {
             </span>
             <IoAddCircleSharp className="w-[25px] h-[25px]"></IoAddCircleSharp>
           </div>
-        </div>
+        </div>  
 
         {/* SEARCH BAR */}
-        <div className="h-20 p-3 flex items-center">
-          <span className="relative z-[99] left-0 my-[15px] mx-[15px]">
+        <div className="relative h-20 w-full p-3 flex items-center">
+          <span className="absolute z-[99] left-0 my-[15px] mx-[25px]">
             <IoIosSearch></IoIosSearch>
           </span>
           <input
-            className="justify-self-center absolute pl-[40px] w-[450px] h-[50px] rounded-[15px] border-[#A1A1A1] border-solid border-[1px]"
+            className="justify-self-center relative pl-[40px] w-full h-[50px] rounded-[15px] border-[#A1A1A1] border-solid border-[1px]"
             type="text"
             placeholder="Search People"
           />
         </div>
 
         {/* FILTER */}
-        <div className=" h-[20px]">
-          <ul className="filter flex list-none w-full pl-[20px]">
+        <div className=" h-[30px] w-full">
+          <ul className="filter flex list-none pl-[20px]">
             {filters.map((filter, index) => (
               <li
                 key={filter}
@@ -69,15 +69,15 @@ export default function Sidebar() {
 
         {/* USER LIST */}
         {/**UNSEEN MESSAGED STYLE*/}
-        <div className="flex-grow mt-[20px] flex items-center overflow-x-auto flex-col">
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left w-[60px] flex justify-center mx-2">
+        <div className="flex-grow mt-[20px] flex items-center flex-col overflow-y-auto overflow-x-hidden">  
+          <div className="my-[5px] w-full msg-container h-[80px] flex items-center justify-center">
+            <div className="msg-left w-[60px] flex justify-center mx-2 ">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
+            <div className=" msg-right flex-grow max-w-[80%] flex flex-col justify-center">
               <span className="text-[16px]">
                 <b>Marc Remolin</b>
-              </span>
+              </span> 
               <span className="text-[14px] truncate">
                 <b>Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</b>
               </span>
@@ -85,11 +85,11 @@ export default function Sidebar() {
           </div>
 
           {/**SEEN MESSAGED STYLE*/}
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
+          <div className="my-[5px] w-full msg-container h-[80px] flex items-center justify-center">
             <div className="msg-left w-[60px] flex justify-center mx-2">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
+            <div className="msg-right flex-grow max-w-[80%] w-full flex flex-col justify-center">
               <span className="text-[16px]">
                 <b>Carl Joshua Krazy</b>
               </span>
@@ -100,7 +100,7 @@ export default function Sidebar() {
           </div>
 
           {/**GROUP MESSAGED TEMPLATE*/}
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
+          <div className="my-[5px] msg-container w-full h-[80px] flex items-center justify-center">
             <div className="msg-left  w-[60px] flex justify-center mx-2">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>
@@ -119,140 +119,7 @@ export default function Sidebar() {
             </div>
           </div>
 
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
-            <div className="msg-left  w-[60px] flex justify-center mx-2">
-              <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
-            </div>
-            <div className="msg-right flex-grow max-w-[80%] flex flex-col justify-center">
-              <span className="text-[16px]">
-                <b>Fuck Group Kings</b>
-              </span>
-              <span className="text-[14px] truncate">
-                <b>
-                  Jericho Rosales Not:{" "}
-                  <span className="msg-prev text-[14px]">
-                    tanginakaasdasdasdadadadadadadadasdasdasd
-                  </span>
-                </b>
-              </span>
-            </div>
-          </div>
-
-          <div className="my-[5px] msg-container w-[450px] h-[80px] flex items-center justify-center">
+          <div className="my-[5px] msg-container w-full h-[80px] flex items-center justify-center">
             <div className="msg-left  w-[60px] flex justify-center mx-2">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
             </div>

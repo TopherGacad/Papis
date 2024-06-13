@@ -5,15 +5,16 @@ import Content from "./components/Content";
 // ROUTER
 import { RouterProvider } from "react-router-dom";
 import { router } from "./Router";
+import AppContextProvider, {
+  useAppContext,
+} from "./Context/AppContextProvider";
 
 const App = () => {
   return (
     <>
-      <RouterProvider router={router} />
-      {/* <Navbar></Navbar> */}
-      {/* <div className="flex">
-
-      </div> */}
+      <AppContextProvider>
+        <RouterProvider router={router} />
+      </AppContextProvider>
     </>
   );
 };

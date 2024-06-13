@@ -3,8 +3,13 @@ import { GrAttachment } from "react-icons/gr";
 import { IoSend } from "react-icons/io5";
 import Groupchat from "./Group";
 import Individualchat from "./Individual";
+import { useContext } from "react";
+import { useAppContext } from "../Context/AppContextProvider";
 
 export default function Content() {
+  // @ts-ignore
+  const { setShowModal } = useAppContext();
+
   return (
     <>
       <div className="bg-white h-full rounded-[20px] flex-grow flex flex-col justify-between items-end">
@@ -17,15 +22,18 @@ export default function Content() {
 
           <div className="right">
             <span className="h-[50px] w-auto">
-              <PiDotsThreeOutlineVerticalThin className="h-[30px] w-[30px]" />
+              <PiDotsThreeOutlineVerticalThin
+                className="h-[30px] w-[30px] cursor-pointer"
+                onClick={() => setShowModal((prev: any) => !prev)}
+              />
             </span>
           </div>
         </div>
 
         {/* Messages */}
 
-        {/* <Groupchat /> */}
-        <Individualchat />
+        <Groupchat />
+        {/* <Individualchat /> */}
 
         {/* Bottom Bar */}
         <div className="bg-white h-[80px] px-[20px] w-full rounded-b-[20px] flex items-center drop-shadow-[0_-5px_5px_rgba(0,0,0,0.05)]">
