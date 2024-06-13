@@ -2,7 +2,7 @@ export default function Groupinfo() {
   return (
     <>
       {/* RIGHT PANEL MAIN CONTAINER */}
-      <div className="right-container h-full container rounded-[20px] bg-white flex flex-col">
+      <div className="right-container h-full rounded-[20px] bg-white flex flex-col">
         {/* PROFILE SECTION */}
         <div className="py-3 head-right max-h-[250px] flex flex-col items-center justify-center border-solid border-b-[1px] border-black-500">
           <span className="w-[90px] h-[90px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
@@ -23,7 +23,7 @@ export default function Groupinfo() {
         </div>
 
         {/* MEMBER LIST */}
-        <div className="mt-[20px] flex flex-grow flex-col mb-[15px] overflow-y-auto">
+        <div className="mt-[20px] flex flex-grow flex-col mb-[15px] overflow-y-auto px-[10px]">
           <div className="my-[2px] msg-container h-[60px] flex items-center justify-center">
             <div className="msg-left w-[60px] flex justify-center mx-2">
               <span className=" w-[45px] h-[45px] rounded-[50%] border-solid border-[1px] border-black-600"></span>

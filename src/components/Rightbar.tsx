@@ -13,7 +13,7 @@ export default function Rightbar() {
       <div
         className={`${
           showModal ? "h-full w-[400px] overflow-y-auto" : "w-0 overflow-hidden"
-        } duration-[0.6s] whitespace-nowrap`}
+        } duration-[0.3s] whitespace-nowrap`}
       >
         <Groupinfo />
       </div>
