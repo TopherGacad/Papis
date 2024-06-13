@@ -1,4 +1,4 @@
-import { PiDotsThreeOutlineVerticalThin } from "react-icons/pi";
+import { CiCircleInfo } from "react-icons/ci";
 import { GrAttachment } from "react-icons/gr";
 import { IoSend } from "react-icons/io5";
 import Groupchat from "./Group";
@@ -22,7 +22,7 @@ export default function Content() {
 
           <div className="right">
             <span className="h-[50px] w-auto">
-              <PiDotsThreeOutlineVerticalThin
+              <CiCircleInfo
                 className="h-[30px] w-[30px] cursor-pointer"
                 onClick={() => setShowModal((prev: any) => !prev)}
               />
