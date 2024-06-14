@@ -10,9 +10,12 @@ export default function AppContextProvider({
   children: React.ReactNode;
 }) {
   const [showModal, setShowModal] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
-    <AppContext.Provider value={{ showModal, setShowModal }}>
+    <AppContext.Provider
+      value={{ showModal, setShowModal, showLogin, setShowLogin }}
+    >
       {children}
     </AppContext.Provider>
   );

@@ -1,6 +1,9 @@
 import { IoClose } from "react-icons/io5";
+import { useAppContext } from "../Context/AppContextProvider";
 
 export default function ModalLogin() {
+  // @ts-ignore
+  const { setShowLogin } = useAppContext();
   return (
     <>
       <div
@@ -9,9 +12,9 @@ export default function ModalLogin() {
       ></div>
       <div className="h-[400px] w-[450px] bg-[#FEFEFE] border-solid border-[1px] rounded-[20px] z-[999] fixed flex flex-col inset-0 m-auto justify-center items-center">
         <div className="h-full w-full flex flex-col justify-start items-center">
-          <div className="closeForm w-full flex flex-row justify-end pr-3.5 pt-3 pb-3">
-            <button>
-              <IoClose />
+          <div className="closeForm w-full flex flex-row justify-end pr-3.5 pt-3 pb-2">
+            <button onClick={() => setShowLogin((prev: boolean) => !prev)}>
+              <IoClose className="h-[30px] w-[30px]" />
             </button>
           </div>
           <div className="flex flex-col">
