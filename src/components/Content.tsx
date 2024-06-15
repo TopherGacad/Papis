@@ -39,7 +39,11 @@ export default function Content() {
         <div className="bg-white h-[80px] px-[20px] w-full rounded-b-[20px] flex items-center drop-shadow-[0_-5px_5px_rgba(0,0,0,0.05)]">
           <div className="head-left w-full flex flex-row items-center align-center justify-between">
             <span className="left p-1">
-              <GrAttachment className="h-[30px] w-[30px]" />
+              <label htmlFor="attach-file">
+                <GrAttachment className="h-[30px] w-[30px] cursor-pointer" />
+                </label>
+              <input title="attach-file" type="file" name="attach-file" id="attach-file" className="hidden"/>
+              
             </span>
 
             <span className="w-full p-1">
@@ -50,7 +54,7 @@ export default function Content() {
               />
             </span>
             <span className="right p-1">
-              <IoSend className="h-[30px] w-[30px]" />
+              <IoSend className="h-[30px] w-[30px] cursor-pointer" />
             </span>
           </div>
         </div>

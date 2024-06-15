@@ -1,11 +1,10 @@
 import { useState } from "react";
 import ModalLogin from "./ModalLogin";
-export default function Login() {
-  const [showLogin, setShowLogin] = useState(false);
+import { useAppContext } from "../Context/AppContextProvider";
 
-  const showLoginModal = () => {
-    setShowLogin(!showLogin);
-  };
+export default function Login() {
+  // @ts-ignore
+  const { showLogin, setShowLogin } = useAppContext();
 
   return (
     <>
@@ -31,7 +30,7 @@ export default function Login() {
               <li className="btn-menu">About Us</li>
               <li
                 className="btn-login border-solid border-[1px] py-[10px] px-[25px] rounded-[15px] bg-[#29D1B8] text-[#FFFFFE]"
-                onClick={showLoginModal}
+                onClick={() => setShowLogin((prev: boolean) => !prev)}
               >
                 Login
               </li>
