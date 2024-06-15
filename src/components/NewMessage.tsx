@@ -19,7 +19,7 @@ export default function NewMessage() {
               type="text"
               placeholder="Search People"
             />
-            <button className="bg-[#37439E] text-white w-1/12 h-[50px] rounded-[10px] mx-1" onClick={() => setShowNewConvo((prev: any) => !prev)}>
+            <button className="bg-[#37439E] hover:bg-[#29D1B8] text-white w-1/12 h-[50px] rounded-[10px] mx-1" onClick={() => setShowNewConvo((prev: any) => !prev)}>
               Cancel
             </button>
           </div>

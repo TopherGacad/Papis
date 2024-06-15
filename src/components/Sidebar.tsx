@@ -36,7 +36,9 @@ export default function Sidebar() {
             </span>
             <IoAddCircleSharp
               className="w-[25px] h-[25px] cursor-pointer"
-              onClick={() => {setShowNewConvo((prev: any) => !prev); setShowModal(false)}}
+              onClick={() => {setShowNewConvo((prev: any) => !prev)
+                ; setShowModal(false)
+              }}
             />
           </div>
         </div>
