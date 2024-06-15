@@ -5,6 +5,7 @@ import { FaSortDown } from "react-icons/fa";
 import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useAppContext } from "../Context/AppContextProvider";
 
 interface Props {
   filters: string[];
@@ -14,6 +15,9 @@ interface Props {
 export default function Sidebar() {
   const filters = ["New", "Groups"];
   const [selectedFilter, setSelectedFilter] = useState(0);
+
+  // @ts-ignore
+  const { setShowModal, setShowNewConvo } = useAppContext();
 
   return (
     <>
@@ -28,11 +32,14 @@ export default function Sidebar() {
           </div>
           <div className="head-right flex justify-around items-center">
             <span className="pr-[10px]">
-              <TbSettings2 className=" w-[25px] h-[25px] cursor-pointer"></TbSettings2>
+              <TbSettings2 className=" w-[25px] h-[25px] cursor-pointer" />
             </span>
-            <IoAddCircleSharp className="w-[25px] h-[25px] cursor-pointer"></IoAddCircleSharp>
+            <IoAddCircleSharp
+              className="w-[25px] h-[25px] cursor-pointer"
+              onClick={() => {setShowNewConvo((prev: any) => !prev); setShowModal(false)}}
+            />
           </div>
-        </div>  
+        </div>
 
         {/* SEARCH BAR */}
         <div className="relative h-20 w-full p-3 flex items-center">
@@ -56,7 +63,7 @@ export default function Sidebar() {
                   setSelectedFilter(index);
                 }}
                 className={`${
-                  index === selectedFilter && "bg-[#7484fa] text-white" 
+                  index === selectedFilter && "bg-[#7484fa] text-white"
                 } cursor-pointer px-[15px] mr-[5px] border-[1px] border-solid rounded-[15px] duration-[.5s]`}
               >
                 {filter}
@@ -69,7 +76,7 @@ export default function Sidebar() {
 
         {/* USER LIST */}
         {/**UNSEEN MESSAGED STYLE*/}
-        <div className="flex-grow mt-[20px] flex items-center flex-col overflow-y-auto overflow-x-hidden">  
+        <div className="flex-grow mt-[20px] flex items-center flex-col overflow-y-auto overflow-x-hidden">
           <div className="my-[5px] w-full msg-container h-[80px] flex items-center justify-center">
             <div className="msg-left w-[60px] flex justify-center mx-2 ">
               <span className=" w-[60px] h-[60px] rounded-[50%] border-solid border-[1px] border-black-600"></span>
@@ -77,7 +84,7 @@ export default function Sidebar() {
             <div className=" msg-right flex-grow max-w-[80%] flex flex-col justify-center">
               <span className="text-[16px]">
                 <b>Marc Remolin</b>
-              </span> 
+              </span>
               <span className="text-[14px] truncate">
                 <b>Wala na akong per na easdasdadadasdasdadasdasdasdasdasdh.</b>
               </span>
