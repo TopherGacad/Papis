@@ -5,60 +5,70 @@ import Groupchat from "./Group";
 import Individualchat from "./Individual";
 import { useContext } from "react";
 import { useAppContext } from "../Context/AppContextProvider";
+import NewMessage from "./NewMessage";
 
 export default function Content() {
   // @ts-ignore
-  const { setShowModal } = useAppContext();
+  const { setShowModal, showNewConvo } = useAppContext();
 
   return (
     <>
-      <div className="bg-white h-full rounded-[20px] flex-grow flex flex-col justify-between items-end">
-        {/* Top Bar */}
-        <div className="bg-white h-[80px] px-[20px] w-full rounded-t-[20px] flex justify-between items-center drop-shadow-[0_5px_5px_rgba(0,0,0,0.05)]">
-          <div className="head-left flex items-center">
-            <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
-            <span className="text-base font-bold">Random GC</span>
+      {showNewConvo ? (
+        <NewMessage />
+      ) : (
+        <div className="bg-white h-full rounded-[20px] flex-grow flex flex-col justify-between items-end">
+          {/* Top Bar */}
+          <div className="bg-white h-[80px] px-[20px] w-full rounded-t-[20px] flex justify-between items-center drop-shadow-[0_5px_5px_rgba(0,0,0,0.05)]">
+            <div className="head-left flex items-center">
+              <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
+              <span className="text-base font-bold">Random GC</span>
+            </div>
+
+            <div className="right">
+              <span className="h-[50px] w-auto">
+                <CiCircleInfo
+                  className="h-[30px] w-[30px] cursor-pointer"
+                  onClick={() => setShowModal((prev: any) => !prev)}
+                />
+              </span>
+            </div>
           </div>
 
-          <div className="right">
-            <span className="h-[50px] w-auto">
-              <CiCircleInfo
-                className="h-[30px] w-[30px] cursor-pointer"
-                onClick={() => setShowModal((prev: any) => !prev)}
-              />
-            </span>
-          </div>
-        </div>
+          {/* Messages */}
 
-        {/* Messages */}
+          <Groupchat />
+          {/* <Individualchat /> */}
 
-        <Groupchat />
-        {/* <Individualchat /> */}
-
-        {/* Bottom Bar */}
-        <div className="bg-white h-[80px] px-[20px] w-full rounded-b-[20px] flex items-center drop-shadow-[0_-5px_5px_rgba(0,0,0,0.05)]">
-          <div className="head-left w-full flex flex-row items-center align-center justify-between">
-            <span className="left p-1">
-              <label htmlFor="attach-file">
-                <GrAttachment className="h-[30px] w-[30px] cursor-pointer" />
+          {/* Bottom Bar */}
+          <div className="bg-white h-[80px] px-[20px] w-full rounded-b-[20px] flex items-center drop-shadow-[0_-5px_5px_rgba(0,0,0,0.05)]">
+            <div className="head-left w-full flex flex-row items-center align-center justify-between">
+              <span className="left p-1">
+                <label htmlFor="attach-file">
+                  <GrAttachment className="h-[30px] w-[30px] cursor-pointer" />
                 </label>
-              <input title="attach-file" type="file" name="attach-file" id="attach-file" className="hidden"/>
-              
-            </span>
+                <input
+                  title="attach-file"
+                  type="file"
+                  name="attach-file"
+                  id="attach-file"
+                  className="hidden"
+                />
+              </span>
 
-            <span className="w-full p-1">
-              <input
-                className="justify-self-center pl-[20px] w-full h-[50px] rounded-[25px] bg-[#EFEFEF]"
-                type="text"
-                placeholder="Type a message..."
-              />
-            </span>
-            <span className="right p-1">
-              <IoSend className="h-[30px] w-[30px] cursor-pointer" />
-            </span>
+              <span className="w-full p-1">
+                <input
+                  className="justify-self-center pl-[20px] w-full h-[50px] rounded-[25px] bg-[#EFEFEF]"
+                  type="text"
+                  placeholder="Type a message..."
+                />
+              </span>
+              <span className="right p-1">
+                <IoSend className="h-[30px] w-[30px] cursor-pointer" />
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

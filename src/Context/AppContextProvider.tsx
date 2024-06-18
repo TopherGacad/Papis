@@ -12,10 +12,10 @@ export default function AppContextProvider({
   const [showModal, setShowModal] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
   const [showGCEdit, setShowGCEdit] = useState(false);
-
+const [showNewConvo, setShowNewConvo] = useState(false);
   return (
     <AppContext.Provider
-      value={{ showModal, setShowModal, showLogin, setShowLogin, showGCEdit, setShowGCEdit }}
+      value={{ showModal, setShowModal, showLogin, setShowLogin, showGCEdit, setShowGCEdit, showNewConvo, setShowNewConvo }}
     >
       {children}
     </AppContext.Provider>

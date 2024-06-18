@@ -27,7 +27,7 @@ export default function Groupchat() {
 
       {/* Time */}
       <div className="time text-center mt-3">
-        <p className="text-[12px]">
+        <p className="text-[14px]">
           <b>June 3, 2024 7:49AM </b>
         </p>
       </div>
@@ -39,6 +39,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[5px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Where to eatttttttt</p>
           </span>
@@ -55,6 +56,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[5px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Where to eatttttttt</p>
           </span>
@@ -71,6 +73,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[5px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Where to eatttttttt</p>
           </span>
@@ -87,6 +90,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[5px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Where to eatttttttt</p>
           </span>
@@ -103,6 +107,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[5px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Where to eatttttttt</p>
           </span>
@@ -119,6 +124,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Carlo Josuwe</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">Chāojí hēi guǐ hahaha</p>
           </span>
@@ -129,6 +135,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Ethan Long</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">
               Tara bili sa baba. Gusto ko maruya.
@@ -137,8 +144,8 @@ export default function Groupchat() {
         </div>
       </div>
       <div className="time text-center">
-        <p className="text-[12px]">
-          <b>11:00AM</b>
+        <p className="text-[14px]">
+          <b>June 3, 2024 11:00AM</b>
         </p>
       </div>
       <div className="msgrcv w-full flex flex-row my-3">
@@ -146,6 +153,7 @@ export default function Groupchat() {
           <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
         </div>
         <div className="flex flex-col">
+          <span className="text-[14px]">Kris Guo</span>
           <span className="mt-2 shrink justify-start h-[40px] rounded-tl-[20px] rounded-bl-[20px] rounded-tr-[20px] rounded-br-[20px] bg-[#EFEFEF] px-4 w-max">
             <p className="msg mt-2 text-[16px]">
               Kain po, Gutom na me. Gusto ko hotdogggg 😭🥰😍
