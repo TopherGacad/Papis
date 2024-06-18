@@ -11,10 +11,11 @@ export default function AppContextProvider({
 }) {
   const [showModal, setShowModal] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
+  const [showNewConvo, setShowNewConvo] = useState(false);
 
   return (
     <AppContext.Provider
-      value={{ showModal, setShowModal, showLogin, setShowLogin }}
+      value={{ showModal, setShowModal, showLogin, setShowLogin, showNewConvo, setShowNewConvo}}
     >
       {children}
     </AppContext.Provider>
