@@ -6,6 +6,7 @@ import { IoIosSearch } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useAppContext } from "../Context/AppContextProvider";
+import ModalLogout from "./ModalLogout";
 
 interface Props {
   filters: string[];
@@ -17,27 +18,34 @@ export default function Sidebar() {
   const [selectedFilter, setSelectedFilter] = useState(0);
 
   // @ts-ignore
-  const { setShowModal, setShowNewConvo } = useAppContext();
+  const { setShowModal, setShowNewConvo, showLogoutModal, setShowLogoutModal } =
+    useAppContext();
 
   return (
     <>
       {/* SIDE NAV */}
       <div className="h-full p-3 side-contain rounded-[20px] w-full bg-white flex flex-col overflow-hidden font-sans">
+        {showLogoutModal && <ModalLogout />}
         {/* HEADER */}
         <div className="flex container justify-between items-center header h-[80px] px-[20px]">
           <div className="head-left flex items-center">
             <span className="w-[50px] h-[50px] rounded-[50%] border-solid border-[1px] border-black-600 mx-2"></span>
             <span className="text-base font-bold items-center">Chats</span>
-            <FaSortDown className="w-[25px] h-[25px] pl-[5px] mb-[10px] cursor-pointer"></FaSortDown>
           </div>
           <div className="head-right flex justify-around items-center">
             <span className="pr-[10px]">
-              <TbSettings2 className=" w-[25px] h-[25px] cursor-pointer" />
+              <TbSettings2
+                className=" w-[25px] h-[25px] cursor-pointer"
+                onClick={() => {
+                  setShowLogoutModal((prev: any) => !prev);
+                }}
+              />
             </span>
             <IoAddCircleSharp
               className="w-[25px] h-[25px] cursor-pointer"
-              onClick={() => {setShowNewConvo((prev: any) => !prev)
-                ; setShowModal(false)
+              onClick={() => {
+                setShowNewConvo((prev: any) => !prev);
+                setShowModal(false);
               }}
             />
           </div>
