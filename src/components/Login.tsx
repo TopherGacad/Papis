@@ -5,6 +5,8 @@ import { useAppContext } from "../Context/AppContextProvider";
 export default function Login() {
   // @ts-ignore
   const { showLogin, setShowLogin } = useAppContext();
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   return (
     <>
@@ -76,15 +78,19 @@ export default function Login() {
                 <div className="field-container">
                   <input
                     className="justify-self-center w-full h-[50px] rounded-[15px] border-[#A1A1A1] border-solid border-[1px]"
-                    type="text"
+                    // type="text"
                     placeholder="Password"
+                    type={showPassword ? "text" : "password"}
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
                 <div className="field-container">
                   <input
                     className="justify-self-center w-full h-[50px] rounded-[15px] border-[#A1A1A1] border-solid border-[1px]"
-                    type="text"
+                    // type="text"
                     placeholder="Confirm Password"
+                    type={showPassword ? "text" : "password"}
                   />
                 </div>
               </form>
@@ -97,6 +103,8 @@ export default function Login() {
                   type="checkbox"
                   name="check-pass"
                   id="check-pass"
+                  value={password}
+                  onChange={() => setShowPassword((prev) => !prev)}
                 />
                 <label
                   className="cursor-pointer text-[#94A1B2]"
