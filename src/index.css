@@ -52,6 +52,15 @@
     duration-[.3s]
     hover:bg-[#28a794];
   }
+
+  input[type="file"] {
+    @apply
+    absolute
+    z-[-99]
+    top-[10px]
+    left-[8px]
+    text-[17px]
+    opacity-0;
 }
 
 /* width */
@@ -73,4 +82,5 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
 }
