@@ -36,6 +36,7 @@ import Sidebar from "./components/Sidebar";
 import Content from "./components/Content";
 import RootLayout from "./components/RootLayout";
 import Login from "./components/Login";
+import Test from "./components/Test";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -44,6 +45,7 @@ export const router = createBrowserRouter(
         <Route path="Content" element={<Content />}></Route>
       </Route>
       <Route path="login" element={<Login />} />
+      <Route path="test" element={<Test />} />
     </Route>
   )
 );
