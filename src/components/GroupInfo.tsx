@@ -19,7 +19,7 @@ export default function Groupinfo() {
               <b className="whitespace-nowrap">Target ng China</b>
             </span>
             <span onClick={() => setShowGCEdit((prev: any) => !prev)}>
-              <AiFillEdit />
+              <AiFillEdit className="cursor-pointer"/>
             </span>
           </div>
           {/* <button className="bg-[#37439E] hover:bg-[#29D1B8] text-white w-[80px] h-[40px] rounded-[10px] mx-1" onClick={}>Edit</button> */}
