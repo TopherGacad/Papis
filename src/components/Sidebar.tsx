@@ -24,7 +24,7 @@ export default function Sidebar() {
   return (
     <>
       {/* SIDE NAV */}
-      <div className="h-full p-3 side-contain rounded-[20px] w-full bg-white flex flex-col overflow-hidden font-sans">
+      <div className="h-full p-3 side-contain rounded-[20px] w-full bg-white flex flex-col overflow-hidden font-sans relative">
         {showLogoutModal && <ModalLogout />}
         {/* HEADER */}
         <div className="flex container justify-between items-center header h-[80px] px-[20px]">
