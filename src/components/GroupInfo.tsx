@@ -4,7 +4,7 @@ import { AiFillEdit } from "react-icons/ai";
 
 export default function Groupinfo() {
   // @ts-ignore
-  const { showGCEdit, setShowGCEdit } = useAppContext();
+  const { showGCEdit, setShowGCEdit, setShowLogoutModal } = useAppContext();
 
   return (
     <>
@@ -18,8 +18,13 @@ export default function Groupinfo() {
             <span className="text-center">
               <b className="whitespace-nowrap">Target ng China</b>
             </span>
-            <span onClick={() => setShowGCEdit((prev: any) => !prev)}>
-              <AiFillEdit className="cursor-pointer"/>
+            <span
+              onClick={() => {
+                setShowGCEdit((prev: any) => !prev);
+                setShowLogoutModal(false);
+              }}
+            >
+              <AiFillEdit className="cursor-pointer" />
             </span>
           </div>
           {/* <button className="bg-[#37439E] hover:bg-[#29D1B8] text-white w-[80px] h-[40px] rounded-[10px] mx-1" onClick={}>Edit</button> */}
